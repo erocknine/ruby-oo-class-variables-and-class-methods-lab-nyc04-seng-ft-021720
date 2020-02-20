@@ -13,17 +13,21 @@ class Song
     @artist = artist
     @genre = genre
     @@artists << artist
+    
     if !@@artist_hash[artist]
       @@artist_hash[artist] = 1
     else
       @@artist_hash[artist] += 1
     end
+    
     @@genres << genre
-    if !@@genre_hash[genre] do
+    
+    if !@@genre_hash[genre]
       @@genre_hash[genre] = 1
     else
       @@genre_hash[genre] += 1
     end
+    
     @@count += 1
   end
 
