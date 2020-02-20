@@ -21,7 +21,7 @@ class Song
     if !@@genre_hash[genre]
       @@genre_hash[genre] = 1
     else if @@genre_hash[genre]
-      @@artist_hash[artist] += 1
+      @@genre_hash[genre] += 1
     @@count += 1
   end
 
@@ -38,11 +38,11 @@ class Song
   end
   
   def self.artist_count
-    
+    @@artist_hash
   end
   
   def self.genre_count
-    
+    @@genre_hash
   end
   
 end
