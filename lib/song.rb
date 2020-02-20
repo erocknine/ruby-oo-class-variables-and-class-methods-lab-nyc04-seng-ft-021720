@@ -17,7 +17,7 @@ class Song
   end
   
   def genres
-    
+    @@genres = @@genres.select{|w| 
   end
   
   def artists
