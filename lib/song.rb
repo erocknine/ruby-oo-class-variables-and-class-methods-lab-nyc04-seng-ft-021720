@@ -15,13 +15,13 @@ class Song
     @@artists << artist
     if !@@artist_hash[artist]
       @@artist_hash[artist] = 1
-    else @@artist_hash[artist]
+    else
       @@artist_hash[artist] += 1
     end
     @@genres << genre
     if !@@genre_hash[genre] do
       @@genre_hash[genre] = 1
-    else @@genre_hash[genre]
+    else
       @@genre_hash[genre] += 1
     end
     @@count += 1
