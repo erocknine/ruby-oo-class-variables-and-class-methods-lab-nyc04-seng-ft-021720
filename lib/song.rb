@@ -35,6 +35,7 @@ class Song
       else if artist_hash[artist]
         artist_hash[artist] += 1
       end
+    end
     artist_hash
   end
   
@@ -46,6 +47,7 @@ class Song
       else if genre_hash[genre]
         genre_hash[genre] += 1
       end
+    end
     genre_hash
   end
   
